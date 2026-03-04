@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<section class="headerr">
+    <nav>
+        <!-- logo path -->
+        <a href="index.html"><img src="C:\Users\REJI\Desktop\new\pic\foo-logo.png" alt="logo"></a>
+
+       <div class="theme-toggle" id="theme-toggle">
+    <div class="toggle-circle"></div>
+</div>
+
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+        <li><i class="fas fa-home"></i> <a href="index.html">HOME</a></li>
+        <li><i class="fas fa-user"></i> <a href="ab.html">ABOUT</a></li>
+        <li><i class="fas fa-book"></i> <a href="course.html">COURSE</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+</section>
+<!-- ------------------course----------------------->
+
+<section class="psc-section">
+    <h2> Courses</h2>
+    <p>Choose the right path to succeed in Kerala PSC exams</p>
+
+    <div class="card-container">
+     <!-- Course 1 -->
+        <div class="card">
+            <div class="card-header">General PSC Offline</div>
+            <div class="card-body">
+                <ul>
+                    <li>10month Comprehensive Training</li>
+                    <li>Module -Based Learning</li>
+                    <li>Daily Practice Exams</li>
+                    <li>Model Exams</li>
+                    <li>Expert Faculty</li>
+                </ul>
+            </div>
+            <a href="#" class="card-btn">Join Course</a>
+        </div>
+        <!-- Course 2 -->
+        <div class="card">
+            <div class="card-header"> General PSC Online</div>
+            <div class="card-body">
+                <ul>
+                    <li>Comprehensive Recorded Video Classese</li>
+                    <li>Guidance and Support via Telegram Channel</li>
+                    <li>6 Month Training program</li>
+                    <li>Daily exams with 2 Time Slots</li>
+                </ul>
+            </div>
+            <a href="#" class="card-btn">Enroll Now</a>
+        </div>
+</section>
+
+
+    
+
+
+<!-- ------------------footer--------------- -->
+ 
+
+<section> 
+<footer class="premium-footer">
+
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h2>Pragathi Career Guidance</h2>
+            <p>
+                Empowering aspirants to achieve success in Kerala PSC exams through expert mentoring,
+                structured learning, and consistent practice.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>MENU</h3>
+            <ul>
+        <li><i class="fas fa-home"></i> <a href="index.html">HOME</a></li>
+        <li><i class="fas fa-user"></i> <a href="ab.html">ABOUT</a></li>
+        <li><i class="fas fa-book"></i> <a href="course.html">COURSE</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kannur, Kerala</p>
+            <p><i class="fas fa-envelope"></i> pragathi@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 9876543210</p>
+        </div>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 Pragathi Career Guidance | All Rights Reserved</p>
+    </div>
+
+</footer>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- JS -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
+
+// Load saved theme
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark");
+}
+
+toggleBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("theme","dark");
+    } else {
+        localStorage.setItem("theme","light");
+    }
+};
+</script>
+
+</body>
+</html>
