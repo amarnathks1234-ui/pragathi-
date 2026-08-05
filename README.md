@@ -52,7 +52,7 @@ pragathi/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/amarnathks1234-ui/pragathi-.git
+git clone https://amarnathks1234-ui.github.io/pragathi-/
 ```
 
 ### Navigate to the project folder
